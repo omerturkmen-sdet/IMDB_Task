@@ -62,7 +62,7 @@ public class BrowserUtils {
         File scrFile = screenshot.getScreenshotAs(OutputType.FILE);
 
         try {
-            FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"/"+screenshotName+".png"));
+            FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"/screenshots/"+screenshotName+".png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
